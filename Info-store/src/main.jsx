@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./app.jsx"; // importa el App verdadero
-import "./app.css"; // importa estilos globales
+import App from "./app.jsx"; 
+import "./app.css"; 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
