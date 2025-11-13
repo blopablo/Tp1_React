@@ -3,7 +3,7 @@ import "./app.css";
 import Head from "./header.jsx";
 import Foot from "./footer.jsx";
 import calabresa from "./assets/calabresa.png";
-import muzajo from "./assets/muzajo.png";
+import muzajo from "./assets/Muzajo.png";
 import especial from "./assets/especial.png";
 import muza from "./assets/muza.png";
 
