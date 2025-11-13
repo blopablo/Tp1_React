@@ -1,0 +1,55 @@
+.footer {
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    background-color: #000000;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: background-color 0.8s ease; /* 👈 transición suave */
+    margin-top: 0%;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer:hover {
+   background-color: rgb(234, 235, 234);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-links h1 {
+  text-align: center;
+  color: #000;
+  font-size: large;
+}
+
+
+.instagram-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-size: 80%;       
+  background-image: url("./assets/instagram.png");
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-color: crimson;
+  transition: transform 1.5s ease, background-color 1.5s ease, color 1.5s ease;
+  text-decoration: none;
+  margin: auto;
+}
+
+.instagram-button:hover {
+  background-color: rgb(212, 24, 172);
+  transform: scale(1.5);
+  transition: transform 1.3s, background-color 1.5s ease-in-out;
+}

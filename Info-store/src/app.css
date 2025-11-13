@@ -1,23 +1,34 @@
 .App {
   text-align: center;
-  padding: 2rem;
+  text-shadow: #000000 20px 20px 25px;
+  text-decoration:dotted;
+  border: #000000 solid 3px ;
+  box-shadow: #000000 24px 24px 24px;
+  padding: 7%;
   background-color: #000000;
   font-family: "Poppins", sans-serif;
+  background-attachment: fixed;
   background-image: url('./assets/Larry.png'); 
   background-size: cover;       
   background-position: center;  
-  background-repeat: no-repeat; 
-  min-height: 100vh; 
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken; 
+  margin-top: 0%;
+  align-items: center;
 }
 
+
+
 h1 {
+  padding: 1%;
   color: #ffffff;
-  margin-bottom: 10px;
-  font-size: 100px;
+  font-size: 80px;
   text-shadow: 20px 20px 25px rgba(8, 8, 8, 0.973);
 }
 
 h2 {
+  padding: 1%;
   color: #fafafa;
   font-size: 50px;
   text-shadow: 20px 20px 25px rgba(8, 8, 8, 0.973);
@@ -25,130 +36,114 @@ h2 {
 
 h3 {
   text-align: center;
-  background-color: #000000;
-  width: 200px;
-  align-items: center;
-  justify-content: center;
   color: #ffffff;
-  font-size: 30px;
-  text-shadow: 20px 20px 25px rgba(8, 8, 8, 0.973);
-  margin: 0 auto;
-  margin-top: 40px;
-  padding: 10px;
-  border-radius: 17%;
+  font-size: 20px;
 }
+
+
 
 p {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 10px;
   text-shadow: 20px 20px 25px rgba(8, 8, 8, 0.973);
+  align-items: center;
 }
+
+/* Estilos para los botones de sabores */
 
 .botones-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   color: #ffffff;
+  height: 15%;
   width: 100%;
   gap: 60px;
   flex-wrap: wrap;
-  margin: 80px 0;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 7%;
+  border-width: 100%;
+  padding: 0%;
+
 }
 
 .boton-sabor {
-  width: 150px;           
-  height: 150px;          
-  border-radius: 50%;    
-  padding: 2% 1%;
-  border: none;
-  box-shadow: #000000 0px 8px 24px;
-  background-image: url('./assets/Larry.png'); 
-  background-size: cover;       
-  background-position: center;  
-  background-repeat: no-repeat; 
-  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: #ffffff 0px 4px 8px;
+  background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: darken;
-  font-weight: bold;
+  display: flex;                  /* ✅ Permite centrar fácilmente */
+  align-items: center;            /* ✅ Centra verticalmente el contenido */
+  justify-content: center; 
+  transition: transform 0.5s ease-in-out;
   color: #ffffff;
-  font-size: 25px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-shadow: 20px 20px 25px rgba(8, 8, 8, 0.973);
-} 
-
-.botones-acciones {
-  display: flex;               
-  justify-content: center;     
-  align-items: center;         
-  text-align: center;
-  gap: 20px;
-  margin-top: 20px;
+  font-size: large;
+  z-index: 1;
 }
 
-.boton-vaciar {
-  padding: 2% 1%;
-  width: 80px;           
-  height: 80px;          
-  border-radius: 50%; 
-  border: #000000 solid 5px;
-  box-shadow: #000000 8px 8px 24px;
-  margin: 20px;
-  background-color: #ffffff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-} 
-
-.boton-vaciar:hover {
-  background-color: #8a2c2c;
-  transform: scale(1.5);
-  transition: all 0.5s ease-in-out;
-  
+.boton-sabor .contenido {
+  position: relative;
+  top: 0%;
+  justify-content: space-around;
+  justify-items: center;
+  left: 0;
+  right: 0;
+  padding: 1rem;
 }
 
-.boton-comprar {
-  width: 80px;           
-  height: 80px;          
-  border-radius: 50%;  
-  border: #000000 solid 3px;  
-  box-shadow: #000000 8px 8px 24px;
-  margin: 20px;
-  background-color: #ffffff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+.boton-sabor .contenido h4 {
+  margin: 0;
+  font-size: 1.1rem;
 }
 
-.boton-comprar:hover {
-  background-color: #598a2c;
-  transform: scale(1.5);
-  transition: all 0.5s ease-in-out;
+.boton-sabor .contenido p {
+  font-size: 0.7rem;
+  margin: 4px 0;
+  line-height: 1.1;
 }
+
+
 
 .boton-sabor:hover {
-  background-color: #598a2c;
-  transform: scale(1.5);
-  transition: all 0.5s ease-in-out;
+  transform: scale(2.5);
+ 
 }
 
 
+/* Estilos para la lista del carrito */
 
-.carrito-lista {
+.carrito-lista {  
+  position: relative;
+  margin-top: 25%;
+  margin-bottom: 0%;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  justify-items: center; 
-  justify-content: center;                
-  background-image: url('./assets/Larry.png');
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  background-image: url('./assets/Logo.png');
   background-size: cover;       
   background-position: center;  
   background-repeat: no-repeat; 
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
   border: #000000 solid 3px;
-  width: 30%;
-  margin: 0 auto;
-  padding: 60px;
-  box-shadow: #000000 0px 8px 24px;
+  width: 32rem;
+  height: 32rem;
+  padding: 70px;
+  box-shadow: #ffffff 0px 8px 16px;
   border-radius: 50%;
   gap: 10px;                            
 }
@@ -162,8 +157,8 @@ p {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  box-shadow: #000000 0px 8px 24px;
-  margin: 15px auto;
+  box-shadow: #ffffff 0px 4px 8px;
+  margin-top: 15px auto;
   padding: 2% 1%;
   background-image: url('./assets/Larry.png');
   background-size: cover;       
@@ -179,6 +174,76 @@ p {
   text-align: center;
   text-shadow: 20px 20px 25px rgba(8, 8, 8, 0.973);
 }
+
+/* Estilos para el círculo del total */
+
+.total {
+  width: 16rem;
+  height: 16rem;
+  background-color: #000000;
+  box-shadow: #ffffff 0px 4px 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;                     /* permite centrar y aplicar ancho/alto */
+  border-radius: 50%;                /* hace el círculo */
+  font-size: 25px;
+  color: #ffffff;
+  border: #fafafa solid 3px;
+  text-shadow: #fafafa 5px 5px 20px;
+  text-align: center;
+  margin: auto;                 /* centra el círculo en el contenedor */
+  margin-top: 0%;
+}
+
+
+.botones-acciones {
+  display: flex;               
+  justify-content: center;     
+  align-items: center;         
+  text-align: center;
+  gap: 20px;
+  margin-top: 5%;
+}
+
+.boton-vaciar {
+  width: 80px;           
+  height: 80px;          
+  border-radius: 50%; 
+  border: #000000 solid 2px;
+  box-shadow: #ffffff 0px 4px 8px;
+  margin: 20px;
+  background-color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+} 
+
+.boton-vaciar:hover {
+  background-color: #8a2c2c;
+  transform: scale(1.5);
+  transition: all 0.8s ease-in-out;
+  
+}
+
+.boton-comprar {
+  width: 80px;           
+  height: 80px;          
+  border-radius: 50%;  
+  border: #000000 solid 2px;
+  box-shadow: #ffffff 0px 4px 8px;
+  margin: 20px;
+  background-color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.boton-comprar:hover {
+  background-color: #598a2c;
+  transform: scale(1.5);
+  transition: all 0.8s ease-in-out;
+}
+
 
 
 

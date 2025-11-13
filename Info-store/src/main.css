@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
   padding: 2rem;
   background-color: #000000;
@@ -57,4 +57,8 @@ h2 {
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); } to { transform: rotate(360deg); }
+} */
+
+#root {
+  background-color: #000000;
 }
