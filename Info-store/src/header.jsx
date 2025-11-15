@@ -19,7 +19,7 @@ function Head({onhomeClick}) {
            </a>
          </p>
      <div className="Login-right">
-          {<h3>Ingresar</h3>}
+          {<h3>Iniciar<br/>Seción</h3>}
             <a 
              href="https://www.instagram.com/larrycapizza?igsh=MXB1dXZuZXVwNG16bg=="
              className="usuario-button"

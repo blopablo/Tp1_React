@@ -10,10 +10,9 @@
   padding: 1rem 3rem;   /* un poco más de espacio a los lados */
   background-color: rgba(0, 0, 0, 0.795);
   color: white;
-  height: 20%; 
+  height: 23%; 
   border-bottom: 2px solid white;
-  box-sizing: border-box; /* evita que el padding sume al ancho total */
-  transition: all 0.8s ease; /* 👈 transición suave */
+  box-sizing: border-box; 
 }
 
 /* .header:hover {
@@ -22,20 +21,27 @@
 } */
 
 
-.logo {
-  font-size: 2rem;
-  font-family: 'Allerta Stencil', sans-serif;
- 
-}
+
 
 .Login-right {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  margin-top: 0.5%;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-around;
   text-align: center;
   align-items: center;
-  gap: 2rem;
   white-space: nowrap; /* evita que el texto se corte si es largo */
+  padding: 1rem;
+  transition: transform 1.2s, background-color 1.2s ease-in-out, color 1.5s ease-in-out;
+}
+
+
+.Login-right h3 {
+  font-size: medium;
+  color: #000000;
 }
 
 
@@ -43,23 +49,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   background-size: 80%;       
   background-image: url("./assets/usuario.png");
   background-position: center;  
   background-repeat: no-repeat;
-  background-color: rgba(248, 2, 2, 0.8);
+  background-color: #72c921;
   background-blend-mode: darken;
-  box-shadow: #000000 0px 8px 24px;
   transition: transform 1.2s, background-color 1.2s ease-in-out, color 1.5s ease-in-out;
   text-decoration: none;
   margin: auto;
 }
 .usuario-button:hover {
-  background-color: #598a2c;
-  transform: scale(1.3);
+  background-color: #72c921;
+  transform: translateY(-2rem) translateX(0rem) scale(2);
 }
 
 
@@ -79,6 +84,6 @@
 }
 
 .home-button a:hover {
-  transform: translateY(7rem) translateX(2rem) scale(1.8);
+  transform: translateY(2rem) translateX(2rem) scale(1.8);
   
 }

@@ -1,0 +1,167 @@
+#root {
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+  margin-right: 10rem;
+  margin-top: 12rem;
+  margin-bottom: 10rem;
+  text-align: center;
+  background-image: url('./assets/fondo.JPG');
+  background-size: 50%;       
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-color: black; 
+  border: 7px solid rgb(255, 253, 253);
+  border-radius: 50%;
+  box-shadow: black 0rem 0rem 1rem 1rem;
+  animation: cambiarFondo 12s ease-in-out 2s infinite;
+  aspect-ratio: 1 / 1;
+  min-height: 100vh;
+  transition: transform 1.5s, background-color 1.5s ease-in;
+}
+
+/* #root:hover {
+  transform: scale(1.1);
+  background-color: crimson;
+} */
+
+
+html, body {
+  aspect-ratio: 1 / 1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.App {
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  background-position: center; 
+  background-size: cover;
+  overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+/* body:hover {
+   background-color: crimson;
+} */
+
+
+/* h1 {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-family: 'Allerta Stencil', sans-serif;
+  text-shadow: 1rem 1rem 3rem rgba(207, 16, 16, 0.7);
+} */
+
+
+
+.button-wrapper {
+  position: fixed;       /* hace que quede siempre visible */
+  left: 7rem;            /* distancia desde el borde izquierdo */
+  display: flex;
+  flex-direction: column; /* los botones uno debajo del otro */
+  gap: 6rem;             /* espacio entre botones */
+  top: 12rem;
+  margin-bottom: auto;
+  margin-left: 3rem;
+  justify-content: flex-start;
+ /*  background-color: tomato;
+  padding: 50px; */
+}
+
+.circle-button {
+  width: 6rem;           /* ancho circular */
+  height: 6rem;          /* alto igual al ancho */
+  border-radius: 50%;    /* hace el botón circular */
+  border: rgb(0, 0, 0) 0.2rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;   /* centra el texto dentro */
+  justify-content: center;
+  transition: transform 1.5s, background-color 1.5s ease-in;
+  text-shadow: black 1rem 1rem 3rem 1rem;
+  box-shadow: black 0rem 0rem 3rem 1rem;
+}
+
+.circle-button:hover {
+  transform: scale(1.5);
+  transition: transform 1.8s, background-color 1.8s ease-in-out;
+  color: #ffffff;
+  border: white solid 0.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pasarimagen {
+  margin-top: 40%;
+  align-items: right;
+  justify-content: space-between;
+  bottom: 15rem;            /* distancia desde el borde inferior */
+  display: flex;
+  flex-direction: row; /* los botones uno al lado del otro */
+  gap: 36rem;
+  margin-right: 1rem;
+  margin-left: 1%;
+}
+.pasar-button {
+  width: 4rem;           /* ancho rectangular */
+  height: 4rem;          /* alto */
+  border-radius: 50%;    /* bordes redondeados */
+  border: none;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;   /* centra el texto dentro */
+  justify-content: center;
+  transition: transform 1.5s, background-color 1.5s ease-in;
+  text-shadow: black 1rem 1rem 3rem 1rem;
+  box-shadow: black 0rem 0rem 3rem 1rem;
+  gap: 4rem;
+} 
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.circle-content {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* @keyframes cambiarFondo {
+  33% { background-image: url('./assets/fondo.JPG'); }
+  66% { background-image: url('./assets/fondo1.JPG'); }
+  100% { background-image: url('./assets/fondo2.JPG'); }
+} */

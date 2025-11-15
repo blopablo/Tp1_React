@@ -1,0 +1,95 @@
+.header {   
+  position: fixed;      /* siempre visible arriba */
+  top: 0;
+  left: 0;
+  right: 0;             /* 👈 esto asegura que use todo el ancho de la pantalla */
+  z-index: 1000;
+  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+
+  padding: 1rem 3rem;   /* un poco más de espacio a los lados */
+  background-color: rgba(0, 0, 0, 0.795);
+  color: white;
+  height: 7rem; 
+  border-bottom: 2px solid white;
+  box-sizing: border-box; /* evita que el padding sume al ancho total */
+}
+
+
+.logo {
+  font-size: 2rem;
+  font-family: 'Allerta Stencil', sans-serif;
+  width: 6rem;
+  height: 6rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  white-space: nowrap; /* evita que el texto se corte si es largo */
+}
+
+/* 🎬 Botón de YouTube */
+.youtube-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: 80%;       
+  background-image: url("./assets/youtube.png");
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  transition: transform 1.5s ease, background-color 1.5s ease, color 1.5s ease;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.youtube-button:hover {
+  background-color: rgb(177, 0, 0);
+  transform: scale(1.1);
+  transition: transform 1.3s, background-color 1.5s ease-in;
+}
+.instagram-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: 80%;       
+  background-image: url("./assets/instagram.png");
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-color: rgb(255, 254, 254);
+  transition: transform 1.5s ease, background-color 1.5s ease, color 1.5s ease;
+  text-decoration: none;
+}
+
+.instagram-button:hover {
+  background-color: rgb(196, 31, 100);
+  transform: scale(1.1);
+  transition: transform 1.3s, background-color 1.5s ease-in;
+}
+
+
+.home-button a {
+  color: crimson;
+  font-size: 3rem;
+  margin-bottom: 0rem;
+  font-family: 'Allerta Stencil', sans-serif;
+  text-shadow: 1rem 1rem 3rem rgba(207, 16, 16, 0.7);
+  display: inline-block;
+  transition: transform 1.5s ease-in-out, color 1.5s ease-in-out;
+}
+
+.home-button a:hover {
+  color: white;
+  transform: scale(1.1);
+}

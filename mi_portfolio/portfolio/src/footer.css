@@ -1,0 +1,43 @@
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    background-color: #111;
+    color: white;
+    size: 1rem ;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: background-color 0.8s ease; /* 👈 transición suave */
+    z-index: 9999; /* por si algo lo cubre */
+    margin-top: auto;
+    margin-bottom: 0;
+    align-items: flex-end;
+    text-align: end;
+}
+
+.footer:hover {
+   background-color: rgb(216, 177, 5);
+}
+
+.h3 {
+  color: #111;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  margin-right: 2rem;
+  font-family: 'Allerta Stencil', sans-serif;
+
+}
+
+
+h2 {
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 0rem;
+  margin-right: 2rem;
+  font-family: 'Allerta Stencil', sans-serif;
+  text-shadow: 1rem 1rem 3rem rgba(207, 16, 16, 0.7);
+}
