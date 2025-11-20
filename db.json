@@ -1,0 +1,36 @@
+{
+  "pizzas": [
+    
+
+    {
+    "nombre": "Muzza",
+    "precio": 10500,
+    "imagen": "./src/assets/muza.png",
+    "descripcion": "Clásica pizza con abundante queso muzzarella fundido."
+  },
+   {
+    "nombre": "Especial",
+    "precio": 12000,
+    "imagen": "./src/assets/especial.png",
+    "descripcion": "Muzzarella, jamón, morrones y aceitunas verdes."
+  },
+  {
+    "nombre": "Muzzajo",
+    "precio": 12000,
+    "imagen": "./src/assets/muzajo.png",
+    "descripcion": "Nuestra muzzarella tradicional con un toque intenso de ajo."
+  },
+  {
+    "nombre": "Calabresa",
+    "precio": 12000,
+    "imagen": "./src/assets/calabresa.png",
+    "descripcion": "Sabor fuerte con rodajas de longaniza y un toque picante."
+  },
+  {
+    "nombre": "Chipza",
+    "precio": 17000,
+    "imagen": "./src/assets/chipza.png",
+    "descripcion": "Base de mandioca con queso y salsa especial de la casa."
+  }
+  ]
+}

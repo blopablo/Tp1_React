@@ -1,0 +1,89 @@
+.header {   
+  position: fixed;      /* siempre visible arriba */
+  top: 0;
+  left: 0;
+  right: 0;             /* 👈 esto asegura que use todo el ancho de la pantalla */
+  z-index: 1000;
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  padding: 1rem 3rem;   /* un poco más de espacio a los lados */
+  background-color: rgba(0, 0, 0, 0.795);
+  color: white;
+  height: 23%; 
+  border-bottom: 2px solid white;
+  box-sizing: border-box; 
+}
+
+/* .header:hover {
+   background-color: rgb(234, 235, 234);
+  border-bottom: 2px solid rgb(0, 0, 0);
+} */
+
+
+
+
+.Login-right {
+  margin-top: 0.5%;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap; /* evita que el texto se corte si es largo */
+  padding: 1rem;
+  transition: transform 1.2s, background-color 1.2s ease-in-out, color 1.5s ease-in-out;
+}
+
+
+.Login-right h3 {
+  font-size: medium;
+  color: #000000;
+}
+
+
+.usuario-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-size: 80%;       
+  background-image: url("./assets/usuario.png");
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-color: #72c921;
+  background-blend-mode: darken;
+  transition: transform 1.2s, background-color 1.2s ease-in-out, color 1.5s ease-in-out;
+  text-decoration: none;
+  margin: auto;
+}
+.usuario-button:hover {
+  background-color: #72c921;
+  transform: translateY(-2rem) translateX(0rem) scale(2);
+}
+
+
+.home-button a {
+  background-image: url("./assets/Logo.png");
+  background-position: center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  margin-left: 2%;
+  align-items: center;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+  margin-top: 30%;
+}
+
+.home-button a:hover {
+  transform: translateY(2rem) translateX(2rem) scale(1.8);
+  
+}
