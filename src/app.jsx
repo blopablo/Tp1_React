@@ -2,15 +2,15 @@ import "./app.css";
 import Head from "./header.jsx";
 import Foot from "./footer.jsx";
 import data from "../db.json";
-import Carrito from "./hooks/Carrito.jsx"; // COMPONENTES
+import Carrito from "./hooks/Carrito.jsx";
 import ProductCard from "./hooks/product-card.jsx";
-import { useCarrito } from "./hooks/useCarrito.js"; // CUSTOM HOOK
+import { useCarrito } from "./hooks/useCarrito.js";
+import ProtectedRoute from "./ProtectedRoute.jsx";
 
 function App() {
+  const pizzas = data.pizzas;
 
-  const pizzas = data.pizzas; // Datos de db.json
-
-  const {                     // Lógica del carrito
+  const {
     carrito,
     agregarAlCarrito,
     calcularTotal,
@@ -19,26 +19,28 @@ function App() {
   } = useCarrito();
 
   return (
-    <div className="App">
-      <Head />
-      <div className="botones-container">
-        {pizzas.map((pizza) => (
-          <ProductCard
-            key={pizza.nombre}
-            sabor={pizza}
-            onAgregar={agregarAlCarrito}
-          />
-        ))}
-      </div>
+      <div className="App">
+        <Head />
 
-      <Carrito
-        carrito={carrito}
-        total={calcularTotal()}
-        vaciar={vaciarCarrito}
-        comprar={comprar}
-      />
-      <Foot />
-    </div>
+        <div className="botones-container">
+          {pizzas.map((pizza) => (
+            <ProductCard
+              key={pizza.nombre}
+              sabor={pizza}
+              onAgregar={agregarAlCarrito}
+            />
+          ))}
+        </div>
+
+        <Carrito
+          carrito={carrito}
+          total={calcularTotal()}
+          vaciar={vaciarCarrito}
+          comprar={comprar}
+        />
+
+        <Foot />
+      </div>
   );
 }
 

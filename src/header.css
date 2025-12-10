@@ -48,7 +48,7 @@
 .usuario-button{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
