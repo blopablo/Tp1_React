@@ -20,22 +20,22 @@ function Head() {
       <div className="Login-right">
         {!user ? (
           <>
-            <button
+            <button className="button-logreg"
               onClick={() => {
                 setShowLogin(true);
                 setShowRegister(false);
               }}
             >
-              Login
+              <h1>Login</h1>
             </button>
 
-            <button
+            <button className="button-logreg"
               onClick={() => {
                 setShowRegister(true);
                 setShowLogin(false);
               }}
             >
-              Registrar
+              <h1>Registrar</h1>
             </button>
           </>
         ) : (

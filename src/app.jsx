@@ -5,7 +5,6 @@ import data from "../db.json";
 import Carrito from "./hooks/Carrito.jsx";
 import ProductCard from "./hooks/product-card.jsx";
 import { useCarrito } from "./hooks/useCarrito.js";
-import ProtectedRoute from "./ProtectedRoute.jsx";
 
 function App() {
   const pizzas = data.pizzas;
@@ -21,7 +20,6 @@ function App() {
   return (
       <div className="App">
         <Head />
-
         <div className="botones-container">
           {pizzas.map((pizza) => (
             <ProductCard

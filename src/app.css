@@ -56,8 +56,10 @@ p {
   justify-content:center;
   align-items: center;
   color: #ffffff;
-  height: 15%;
-  width: 100%;
+  background-color: rgb(0, 0, 0);
+  height: 300px;
+  width: 90%;
+  border-radius: 30%;
   gap: 120px;
   flex-wrap: wrap;
   margin: 0 auto;
